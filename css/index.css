@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+    max-width: 530px;
+    margin: 0 auto;
+    font: normal 14px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei", STXihei, hei;
+    color: #000000;
+    background: #f2f2f2;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* 顶部搜索框 */
+
+.search-index {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 540px;
+    min-width: 320px;
+    /* background-color: rgba(159, 204, 176, 0.753); */
+    width: 100%;
+    height: 44px;
+    box-sizing: border-box;
+    /* 距离左边的距离 */
+    padding-left: 14px;
+    /* 层级 */
+    z-index: 999;
+}
+
+.search-box {
+    flex: 1;
+    height: 26px;
+    border-radius: 15px;
+    background-color: #fff;
+    align-self: center;
+    /* padding-left: 10px; */
+    position: relative;
+    /* 阴影 */
+    box-shadow: 0 1px 2px #777777;
+}
+
+.search-text {
+    display: flex;
+    padding-left: 43px;
+    line-height: 24px;
+    color: #666666;
+}
+
+.search-text::after {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    content: "";
+    width: 20px;
+    height: 100%;
+    background-image: url(../img/home-common-sprite2x@v7.15.png);
+    background-repeat: no-repeat;
+    background-size: 23px auto;
+    display: block;
+}
+
+.search-user {
+    width: 51px;
+    height: 44px;
+    /* background-color: rgb(151, 147, 147); */
+    display: flex;
+    /* 主轴方向为Y */
+    flex-direction: column;
+    /* 去除下划线 */
+    text-decoration: none;
+    color: #000000;
+    font-size: 10px;
+}
+
+.search-user::before {
+    content: " ";
+    width: 22px;
+    height: 22px;
+    background: url(../img/home-common-sprite2x@v7.15.png) no-repeat 0 -36px;
+    background-size: 21px auto;
+    display: block;
+    margin-top: 3px;
+}
+
+.search-user::before,
+.search-user>span {
+    /* 元素子轴排列方式 */
+    color: #fff;
+    align-self: center;
+}
+
+.search-user>span {}
+
+
+/*  */
+
+
+/*  */
+
+
+/* 轮播图 */
+
+.header-module {
+    position: relative;
+}
+
+.header-module .img-boom {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+.header-module .img-cover {
+    width: 100%;
+    height: 36px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/*  */
+
+
+/*  */
+
+
+/* local-nav */
+
+.local-nav {
+    height: 66px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.local-nav li {
+    list-style: none;
+    flex: 1;
+}
