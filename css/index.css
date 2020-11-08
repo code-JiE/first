@@ -14,6 +14,10 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /* 顶部搜索框 */
 
@@ -97,7 +101,8 @@ body {
     align-self: center;
 }
 
-.search-user>span {}
+
+/* .search-user>span {} */
 
 
 /*  */
@@ -115,7 +120,6 @@ body {
 .header-module .img-boom {
     width: 100%;
     border-radius: 0 0 20px 20px;
-    top: -50px;
 }
 
 
@@ -153,9 +157,8 @@ body {
     display: flex;
     background-color: #fff;
     border-radius: 8px;
-    margin: -80px 10px 0 10px;
-    z-index: 999;
-    box-shadow: 0 1px 6px #dddddd;
+    margin: -70px 10px 0 10px;
+    box-shadow: 0 1px 6px #dddd;
 }
 
 .local-nav li {
@@ -175,10 +178,125 @@ body {
 }
 
 .local-nav .local-nav-icon {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     background-image: url(../img/home-fivemain-sprite2x@v7.15.png);
-    background-size: 32px auto;
+    background-size: 40px auto;
     /* background-position: 0px 0px; */
-    bacg
+}
+
+
+/*  */
+
+
+/*  */
+
+
+/* 主导航 nav-main*/
+
+.nav-main {
+    border-radius: 10px;
+    margin: 10px 9px 4px 9px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* 每一行 */
+
+.nav-main .nav-row {
+    height: 65px;
+    background-color: rgb(241, 167, 167);
+    display: flex;
+}
+
+
+/* 第一行 */
+
+.nav-main .nav-row:nth-child(1) {
+    height: 65px;
+    background-color: rgb(241, 167, 167);
+    display: flex;
+    background: -webkit-linear-gradient(left, #fa5956, #fb8650);
+}
+
+
+/* 第二行 */
+
+.nav-main .nav-row:nth-child(2) {
+    margin: 2px 0;
+    background: -webkit-linear-gradient(left, #4C90EE, #54BCEE)
+}
+
+
+/* 第三行 */
+
+.nav-main .nav-row:nth-child(3) {
+    margin: 2px 0;
+    background: -webkit-linear-gradient(left, #34C2A9, #6CD557);
+}
+
+.nav-main .nav-row>a {
+    flex: 1;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-main .nav-row .a-max {
+    color: #a05416;
+    /* background: -webkit-linear-gradient(right, #ffbc49, #ffd252); */
+    background: #FFCC50;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* 每一行的第一个a标签容器 */
+
+.nav-main .nav-row>a:nth-child(1) {
+    flex: 0 1 31%;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+
+/* 每一行第二个a标签 */
+
+.nav-main .nav-row>a:nth-child(2) {
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.nav-main .nav-row>a:nth-child(1)>span {
+    padding-left: 8px;
+}
+
+
+/* 每一行的第二三四个a标签容器 */
+
+.nav-main .nav-row>a:nth-child(2),
+.nav-main .nav-row>a:nth-child(3),
+.nav-main .nav-row>a:nth-child(4) {
+    align-items: center;
+}
+
+.nav-main .nav-row>a:nth-child(2),
+.nav-main .nav-row>a:nth-child(3),
+.nav-main .nav-row>a:nth-child(4) {
+    box-sizing: border-box;
+    border-left: 1px solid #f2f2f2f2;
+    flex: 1
+}
+
+
+/* (100-31)/3*2=46 */
+
+.nav-main .nav-row:nth-child(1)>a:nth-child(3) {
+    flex: 0 1 46%;
 }
