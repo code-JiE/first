@@ -73,4 +73,40 @@
         navMainAArr[index].style.backgroundImage = `url(${navMian[index].imgurl})`
     }
 
+
+    /* subnav */
+    // 数据
+    var dataSubnab = [{
+            text: '自由行'
+        }, {
+            text: 'WiFi电话卡'
+        }, {
+            text: '保险·签证'
+        }, {
+            text: '换钞·购物'
+        }, {
+            text: '向导·包车'
+        }, {
+            text: '特价机票'
+        }, {
+            text: '礼品卡'
+        }, {
+            text: '申卡·借钱'
+        }, {
+            text: '旅拍'
+        }, {
+            text: '更多'
+        }]
+        //li标签
+    var subnavLi = document.querySelectorAll('.subnav li')
+    var subnavA = document.querySelectorAll('.subnav li a')
+    var subnavText = document.querySelectorAll('.subnav .subnav-text')
+    var subnavIcon = document.querySelectorAll('.subnav .subnav-icon')
+    for (let index = 0; index < subnavLi.length; index++) {
+        subnavText[index].textContent = dataSubnab[index].text
+        subnavIcon[index].style.backgroundPositionY = index * -28 + 'px'
+
+    }
+
+
 })()
